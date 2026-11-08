@@ -1,0 +1,6 @@
+server:
+  port: 9002
+resource:
+  issuer: ${RESOURCE_ISSUER:http://localhost:9001}
+  jwk-set-uri: ${RESOURCE_JWK_SET_URI:http://localhost:9000/oauth2/jwks}
+  audience: ${RESOURCE_AUDIENCE:demo-api}
